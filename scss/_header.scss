@@ -1,0 +1,29 @@
+@import './fonts';
+body > header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    padding-block-start: 0;
+    padding-block-end: 0;
+
+}
+@media (min-width: 768px) {
+    body > header {
+        padding: 52px;
+        padding-block-start: 0;
+        padding-block-end: 0;
+    }
+}
+
+body > header > h1 {
+    font-family: HeeboExtraBold;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 53px;
+    /* identical to box height */
+    /* Gray 1 */
+    color: #333333;
+}

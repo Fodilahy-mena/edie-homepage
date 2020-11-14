@@ -1,0 +1,135 @@
+@import './fonts';
+
+.masthead > figure {
+    margin-left: 0;
+    margin-right: 0;
+}
+.masthead > figure > img {
+    max-width: 100%;
+    min-width: 100%;
+}
+
+.services, .purpose {
+    max-width:  80%;
+    min-width: 80%;
+    margin-left: 8%;
+    margin-right: auto;
+}
+.services > ul {
+    list-style: none;
+    padding: 0;
+}
+.services--link {
+    font-family: PoppinsMedium;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    /* identical to box height */
+    color: #2D9CDB;
+}
+
+.services > h2, .purpose > h2 {
+    font-family: PoppinsMedium;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    /* Gray 1 */
+    color: #333333;
+}
+
+.purpose > p {
+    font-family: PoppinsRegular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    /* Gray 2 */
+    color: #4F4F4F;
+}
+
+.email--label {
+    font-family: PoppinsMedium;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 15px;
+    /* Gray 3 */
+    color: #828282;
+}
+
+.container {
+    background: #F2F2F2;
+    border-radius: 12px;
+    border: 1px solid rgba(202, 202, 250, 0.623);
+    display: flex;
+    width: 291px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.email--input {
+    background: #F2F2F2;
+    border-radius: 12px;
+    padding-block-start: 15px;
+    padding-block-end: 15px;
+    padding-inline-start: 19px;
+    padding-inline-end: 19px;
+    border: none;
+}
+
+.email--button {
+    font-family: PoppinsMedium;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    /* Gray 6 */
+    color: #F2F2F2;
+    background: #2D9CDB;
+    border-radius: 12px;
+    padding-block-start: 11px;
+    padding-block-end: 11px;
+    padding-inline-start: 21px;
+    padding-inline-end: 21px;
+    border: none;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    .services, .purpose {
+        max-width: 543px;
+        min-width:  543px;
+        margin-left: 16%;
+    }
+    .services > h2, .purpose > h2 {
+        font-size: 48px;
+        line-height: 72px; 
+    }
+
+    .purpose > p {
+        font-size: 18px;
+        line-height: 27px;
+    }
+    .email--label {
+        font-size: 14px;
+        line-height: 21px;
+    }
+    .container {
+        width: 350px;
+    }
+    .email--input {
+        padding-inline-start: 21px;
+        padding-inline-end: 21px;
+        max-width: 60%;
+        min-width: 60%;
+    }
+
+    .email--button {
+        padding-inline-start: 27px;
+        padding-inline-end: 27px;
+    }
+}
+

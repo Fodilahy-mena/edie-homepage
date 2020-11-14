@@ -1,0 +1,74 @@
+@import './fonts';
+.card--image__wraper {
+    border-radius: 16px;
+    width: 67px;
+}
+.edit {
+    background: #2D9CDB;
+}
+.arrows {
+    // padding-block-start: 7px;
+    // padding-block-end: 7px;
+    background: #27AE60;
+}
+.card__image {
+    padding: 1rem;
+    position: relative;
+    left: 4px;
+    top: 2px;
+}
+// .frontend::before {
+//     content: url(../images/leftarrow.svg);
+//     position: relative;
+//     right: 6px;
+//     top: 10px;
+// }
+// .frontend::after {
+//     content: url(../images/rightarrow.svg);
+//     position: relative;
+//     bottom: 14px;
+//     left: 28px;
+// }
+.likemenu {
+    padding-block-start: 0;
+    padding-block-end: 0;
+    background: #EB5757;
+}
+
+
+
+// .backend::after {
+//     content: url(../images/backend.svg);
+//     position: relative;
+//     left: 16px;
+//     bottom: 16px;
+//     z-index: 1;
+// }
+// .backend::before {
+//     content: url(../images/dots.svg);
+//     position: relative;
+//     right: 6px;
+//     top: 15px;
+//     z-index: 4;
+// }
+.get--started {
+    padding-block-start: 9px;
+    padding-block-end: 9px;
+    background: #E0E0E0;
+    border-radius: 12px;
+    width: 116px;
+    border: none;
+    cursor: pointer;
+    
+    font-family: PoppinsMedium;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height */
+    color: #828282;
+}
+.get--started:hover {
+    color: #E0E0E0;
+    background: #2D9CDB;
+}

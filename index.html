@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edie homepage</title>
+    <link rel="stylesheet" href="./webroot/css/index.css">
+</head>
+<body>
+    <input type="checkbox" id="menu_checkbox">
+    <header>
+        <h1>Edie</h1>
+        <label for="menu_checkbox" class="icon_menu">
+        </label>
+    </header>
+
+    <main>
+        <header>
+            <div class="masthead">
+                <div class="services">
+                    <ul>
+                        <li><a class="services--link" href="/unhappy">Unhappy with your website?</a></li>
+                    </ul>
+                    <h2>We create beautiful and fast web services</h2>
+                </div>
+                <figure>
+                    <img src="./assets/heroImage.jpg" alt="edie team conference figuring out your website">
+                </figure>
+                <div class="purpose">
+                    <h2>Story, emotion and purpose</h2>
+                    <p>
+                        We help transform your ideas into real world applications that will outperform your toughest competition and help you achieve your strategic goals in short period of time.
+                    </p>
+
+                    <form action="" method="get">
+                        <div class="form__email">
+                            <label class="email--label" for="email">Want us to contact you?</label>
+                            <br/>
+                            <div class="container">
+                                <input class="email--input" type="email" name="email" id="email" placeholder="Email" required>
+                                <button class="email--button" type="submit">Join</button> 
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </header>
+        <section class="section--services">
+            <div class="section--services__components">
+                <h2>We offer high demand services</h2>
+                <div class="components__cards">
+                    <div class="card">
+                        <div class="card--image__wraper edit">
+                            <img class="card__image" src="./assets/edit.svg" alt="">
+                        </div>
+                        <h3>UI/UX Design</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.
+                        </p>
+                        <button class="get--started">Get started</button>
+                    </div>
+
+                    <div class="card">
+                        <div class="card--image__wraper arrows">
+                            <!-- <span class="card__image frontend"></span> -->
+                            <img class="card__image frontend" src="./assets/frontend.svg" alt="">
+                        </div>
+                        
+                        <h3>Front End</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.
+                        </p>
+                        <button class="get--started">Get started</button>
+                    </div>
+
+                    <div class="card">
+                        <div class="card--image__wraper likemenu">
+                            <!-- <span class="card__image backend"></span> -->
+                            <img class="card__image backend" src="./assets/backend.svg" alt="">
+                        </div>
+                        <h3>Back End</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.
+                        </p>
+                        <button class="get--started">Get started</button>
+                    </div>
+                </div>
+            </div>
+            <div class="section--services__components">
+
+            </div>
+
+        </section>
+    </main>
+    <nav class="navigation">
+        <label for="menu_checkbox" class="icon_menu">
+            <!-- <span class="a11y">Site menu</span> -->
+        </label>
+        <ul class="navigation__list">
+            <li class="navigation__item active">
+                <a class="navigation__link navigation__link--home" href="/">Home</a>
+            </li>
+
+            <li class="navigation__item">
+                <a class="navigation__link navigation__link--services" href="/services">Services</a>
+            </li>
+
+            <li class="navigation__item">
+                <a class="navigation__link navigation__link--our-works" href="/our-works">Our works</a>
+            </li>
+
+            <li class="navigation__item">
+                <a class="navigation__link navigation__link--clients" href="/clients">Clients</a>
+            </li>
+
+            <li class="navigation__item">
+                <a class="navigation__link navigation__link--contact" href="/contact">Contact</a>
+            </li>
+        </ul>
+    </nav>
+</body>
+</html>

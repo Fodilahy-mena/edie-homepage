@@ -1,0 +1,42 @@
+@font-face {
+    font-family: HeeboExtraBold;
+    src: local('Heebo Extra Bold'),
+         local('Heebo ExtraBold'),
+         local('Heebo Extra-bold'),
+         local('Heebo Extra-Bold'),
+         local('heebo extraBold'),
+         local('heebo extra-bold'),
+         local('beebo extrabold'),
+         url('../fonts/Heebo-ExtraBold.woff2') format("woff2"),
+         url('../fonts/Heebo-ExtraBold.woff') format("woff");
+  }
+
+  @font-face {
+    font-family: PoppinsBold;
+    src: local('Poppins Bold'),
+         local('Poppins-Bold'),
+         local('poppins bold'),
+         local('poppins-bold'),
+         url('../fonts/Poppins-Bold1.woff2') format("woff2"),
+         url('../fonts/Poppins-Bold1.woff') format("woff");
+  }
+
+  @font-face {
+    font-family: PoppinsRegular;
+    src: local('Poppins Regular'),
+         local('Poppins-Regular'),
+         local('poppins regular'),
+         local('poppins-regular'),
+         url('../fonts/Poppins-Regular1.woff2') format("woff2"),
+         url('../fonts/Poppins-Regular1.woff') format("woff");
+  }
+
+  @font-face {
+    font-family: PoppinsMedium;
+    src: local('Poppins Medium'),
+         local('Poppins-Medium'),
+         local('poppins medium'),
+         local('poppins-medium'),
+         url('../fonts/Poppins-Medium1.woff2') format("woff2"),
+         url('../fonts/Poppins-Medium1.woff') format("woff");
+  }

@@ -1,0 +1,376 @@
+body {
+  margin: 0;
+  padding: 0; }
+
+@font-face {
+  font-family: HeeboExtraBold;
+  src: local("Heebo Extra Bold"), local("Heebo ExtraBold"), local("Heebo Extra-bold"), local("Heebo Extra-Bold"), local("heebo extraBold"), local("heebo extra-bold"), local("beebo extrabold"), url("../fonts/Heebo-ExtraBold.woff2") format("woff2"), url("../fonts/Heebo-ExtraBold.woff") format("woff"); }
+
+@font-face {
+  font-family: PoppinsBold;
+  src: local("Poppins Bold"), local("Poppins-Bold"), local("poppins bold"), local("poppins-bold"), url("../fonts/Poppins-Bold1.woff2") format("woff2"), url("../fonts/Poppins-Bold1.woff") format("woff"); }
+
+@font-face {
+  font-family: PoppinsRegular;
+  src: local("Poppins Regular"), local("Poppins-Regular"), local("poppins regular"), local("poppins-regular"), url("../fonts/Poppins-Regular1.woff2") format("woff2"), url("../fonts/Poppins-Regular1.woff") format("woff"); }
+
+@font-face {
+  font-family: PoppinsMedium;
+  src: local("Poppins Medium"), local("Poppins-Medium"), local("poppins medium"), local("poppins-medium"), url("../fonts/Poppins-Medium1.woff2") format("woff2"), url("../fonts/Poppins-Medium1.woff") format("woff"); }
+
+body > header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  padding-block-start: 0;
+  padding-block-end: 0; }
+
+@media (min-width: 768px) {
+  body > header {
+    padding: 52px;
+    padding-block-start: 0;
+    padding-block-end: 0; } }
+
+body > header > h1 {
+  font-family: HeeboExtraBold;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 53px;
+  /* identical to box height */
+  /* Gray 1 */
+  color: #333333; }
+
+@font-face {
+  font-family: HeeboExtraBold;
+  src: local("Heebo Extra Bold"), local("Heebo ExtraBold"), local("Heebo Extra-bold"), local("Heebo Extra-Bold"), local("heebo extraBold"), local("heebo extra-bold"), local("beebo extrabold"), url("../fonts/Heebo-ExtraBold.woff2") format("woff2"), url("../fonts/Heebo-ExtraBold.woff") format("woff"); }
+
+@font-face {
+  font-family: PoppinsBold;
+  src: local("Poppins Bold"), local("Poppins-Bold"), local("poppins bold"), local("poppins-bold"), url("../fonts/Poppins-Bold1.woff2") format("woff2"), url("../fonts/Poppins-Bold1.woff") format("woff"); }
+
+@font-face {
+  font-family: PoppinsRegular;
+  src: local("Poppins Regular"), local("Poppins-Regular"), local("poppins regular"), local("poppins-regular"), url("../fonts/Poppins-Regular1.woff2") format("woff2"), url("../fonts/Poppins-Regular1.woff") format("woff"); }
+
+@font-face {
+  font-family: PoppinsMedium;
+  src: local("Poppins Medium"), local("Poppins-Medium"), local("poppins medium"), local("poppins-medium"), url("../fonts/Poppins-Medium1.woff2") format("woff2"), url("../fonts/Poppins-Medium1.woff") format("woff"); }
+
+.navigation__list {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  position: relative; }
+
+.navigation__link {
+  font-family: PoppinsMedium;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #333333; }
+
+.navigation__item:first-child a {
+  padding-inline-start: 0; }
+
+.navigation__item:last-child a {
+  padding-inline-end: 0; }
+
+.navigation__link {
+  padding: 1rem;
+  background-image: none;
+  line-height: 1.25rem;
+  background-position: 1rem 50%;
+  text-decoration: none;
+  display: block; }
+
+.navigation {
+  padding: 1rem;
+  position: absolute;
+  z-index: 3;
+  top: -10px;
+  right: 0;
+  bottom: 0;
+  height: auto;
+  display: none;
+  margin-right: auto;
+  margin-left: auto;
+  width: 375px;
+  height: auto;
+  transition: transform 1s;
+  background: #FFFFFF;
+  box-shadow: 0px 10px 30px rgba(51, 51, 51, 0.1);
+  border-radius: 6px; }
+
+body > [type="checkbox"]:checked ~ .navigation {
+  transform: translateY(0%);
+  top: 0;
+  display: block; }
+
+body > [type="checkbox"]:checked ~ header label {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0); }
+
+.navigation label {
+  width: 250px;
+  display: block;
+  height: 30px; }
+
+body > [type="checkbox"] {
+  display: none; }
+
+.navigation > label, body > header > label {
+  width: 28px;
+  height: 28px;
+  background-size: 28px;
+  background-repeat: no-repeat;
+  position: relative; }
+
+body > header > label {
+  background-image: url(../images/menu.svg); }
+
+.navigation > label {
+  background-image: url(../images/cross.svg);
+  margin-left: auto; }
+
+.navigation > label:hover {
+  background-color: #fc7f7f; }
+
+@media (min-width: 768px) {
+  body > header label {
+    display: none; }
+  .navigation {
+    display: block;
+    padding: 0;
+    background-color: transparent;
+    top: 23px;
+    left: 0;
+    right: 0;
+    bottom: auto;
+    max-width: 90%;
+    min-width: 90%;
+    height: auto;
+    box-shadow: none;
+    transform: none;
+    transition: none;
+    margin-inline-start: auto;
+    margin-inline-end: 52px; }
+  .navigation label {
+    display: none; }
+  .navigation__list {
+    flex-direction: row;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0;
+    max-width: unset;
+    min-width: unset;
+    margin: unset;
+    position: unset;
+    top: unset; } }
+
+main {
+  margin-left: 10px;
+  margin-right: 10px; }
+
+@media (min-width: 768px) {
+  main {
+    margin-left: 52px;
+    margin-right: 52px; } }
+
+@font-face {
+  font-family: HeeboExtraBold;
+  src: local("Heebo Extra Bold"), local("Heebo ExtraBold"), local("Heebo Extra-bold"), local("Heebo Extra-Bold"), local("heebo extraBold"), local("heebo extra-bold"), local("beebo extrabold"), url("../fonts/Heebo-ExtraBold.woff2") format("woff2"), url("../fonts/Heebo-ExtraBold.woff") format("woff"); }
+
+@font-face {
+  font-family: PoppinsBold;
+  src: local("Poppins Bold"), local("Poppins-Bold"), local("poppins bold"), local("poppins-bold"), url("../fonts/Poppins-Bold1.woff2") format("woff2"), url("../fonts/Poppins-Bold1.woff") format("woff"); }
+
+@font-face {
+  font-family: PoppinsRegular;
+  src: local("Poppins Regular"), local("Poppins-Regular"), local("poppins regular"), local("poppins-regular"), url("../fonts/Poppins-Regular1.woff2") format("woff2"), url("../fonts/Poppins-Regular1.woff") format("woff"); }
+
+@font-face {
+  font-family: PoppinsMedium;
+  src: local("Poppins Medium"), local("Poppins-Medium"), local("poppins medium"), local("poppins-medium"), url("../fonts/Poppins-Medium1.woff2") format("woff2"), url("../fonts/Poppins-Medium1.woff") format("woff"); }
+
+.masthead > figure {
+  margin-left: 0;
+  margin-right: 0; }
+
+.masthead > figure > img {
+  max-width: 100%;
+  min-width: 100%; }
+
+.services, .purpose {
+  max-width: 80%;
+  min-width: 80%;
+  margin-left: 8%;
+  margin-right: auto; }
+
+.services > ul {
+  list-style: none;
+  padding: 0; }
+
+.services--link {
+  font-family: PoppinsMedium;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  /* identical to box height */
+  color: #2D9CDB; }
+
+.services > h2, .purpose > h2 {
+  font-family: PoppinsMedium;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  /* Gray 1 */
+  color: #333333; }
+
+.purpose > p {
+  font-family: PoppinsRegular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  /* Gray 2 */
+  color: #4F4F4F; }
+
+.email--label {
+  font-family: PoppinsMedium;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 15px;
+  /* Gray 3 */
+  color: #828282; }
+
+.container {
+  background: #F2F2F2;
+  border-radius: 12px;
+  border: 1px solid rgba(202, 202, 250, 0.623);
+  display: flex;
+  width: 291px;
+  flex-direction: row;
+  justify-content: space-between; }
+
+.email--input {
+  background: #F2F2F2;
+  border-radius: 12px;
+  padding-block-start: 15px;
+  padding-block-end: 15px;
+  padding-inline-start: 19px;
+  padding-inline-end: 19px;
+  border: none; }
+
+.email--button {
+  font-family: PoppinsMedium;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  /* Gray 6 */
+  color: #F2F2F2;
+  background: #2D9CDB;
+  border-radius: 12px;
+  padding-block-start: 11px;
+  padding-block-end: 11px;
+  padding-inline-start: 21px;
+  padding-inline-end: 21px;
+  border: none;
+  cursor: pointer; }
+
+@media (min-width: 768px) {
+  .services, .purpose {
+    max-width: 543px;
+    min-width: 543px;
+    margin-left: 16%; }
+  .services > h2, .purpose > h2 {
+    font-size: 48px;
+    line-height: 72px; }
+  .purpose > p {
+    font-size: 18px;
+    line-height: 27px; }
+  .email--label {
+    font-size: 14px;
+    line-height: 21px; }
+  .container {
+    width: 350px; }
+  .email--input {
+    padding-inline-start: 21px;
+    padding-inline-end: 21px;
+    max-width: 60%;
+    min-width: 60%; }
+  .email--button {
+    padding-inline-start: 27px;
+    padding-inline-end: 27px; } }
+
+@font-face {
+  font-family: HeeboExtraBold;
+  src: local("Heebo Extra Bold"), local("Heebo ExtraBold"), local("Heebo Extra-bold"), local("Heebo Extra-Bold"), local("heebo extraBold"), local("heebo extra-bold"), local("beebo extrabold"), url("../fonts/Heebo-ExtraBold.woff2") format("woff2"), url("../fonts/Heebo-ExtraBold.woff") format("woff"); }
+
+@font-face {
+  font-family: PoppinsBold;
+  src: local("Poppins Bold"), local("Poppins-Bold"), local("poppins bold"), local("poppins-bold"), url("../fonts/Poppins-Bold1.woff2") format("woff2"), url("../fonts/Poppins-Bold1.woff") format("woff"); }
+
+@font-face {
+  font-family: PoppinsRegular;
+  src: local("Poppins Regular"), local("Poppins-Regular"), local("poppins regular"), local("poppins-regular"), url("../fonts/Poppins-Regular1.woff2") format("woff2"), url("../fonts/Poppins-Regular1.woff") format("woff"); }
+
+@font-face {
+  font-family: PoppinsMedium;
+  src: local("Poppins Medium"), local("Poppins-Medium"), local("poppins medium"), local("poppins-medium"), url("../fonts/Poppins-Medium1.woff2") format("woff2"), url("../fonts/Poppins-Medium1.woff") format("woff"); }
+
+.card--image__wraper {
+  border-radius: 16px;
+  width: 67px; }
+
+.edit {
+  background: #2D9CDB; }
+
+.arrows {
+  background: #27AE60; }
+
+.card__image {
+  padding: 1rem;
+  position: relative;
+  left: 4px;
+  top: 2px; }
+
+.likemenu {
+  padding-block-start: 0;
+  padding-block-end: 0;
+  background: #EB5757; }
+
+.get--started {
+  padding-block-start: 9px;
+  padding-block-end: 9px;
+  background: #E0E0E0;
+  border-radius: 12px;
+  width: 116px;
+  border: none;
+  cursor: pointer;
+  font-family: PoppinsMedium;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height */
+  color: #828282; }
+
+.get--started:hover {
+  color: #E0E0E0;
+  background: #2D9CDB; }
