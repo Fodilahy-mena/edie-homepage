@@ -1,0 +1,115 @@
+@import './fonts';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+
+footer {
+    background: #100E1D;
+}
+footer h2 {
+    margin: 0;
+}
+footer h2 a {
+    text-decoration: none;
+    font-family: HeeboExtraBold;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 53px;
+    /* identical to box height */
+    /* Gray 6 */
+    color: #F2F2F2;
+}
+
+.footer__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    position: relative;
+}
+
+.footer__link {
+    // padding: 1rem;
+    background-image: none;
+    // line-height: 1.25rem;
+    text-decoration: none;
+    display: block;
+}
+.links_social {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 104px;
+}
+.footer__list a {
+    font-family: PoppinsRegular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 200%;
+    /* or 36px */
+    color: #FFFFFF;
+}
+.icon {
+    background-repeat: no-repeat;
+    background-size: 1rem;
+    background-position: 50% 50%;
+}
+.icon_instagram {
+    background-image: url(../images/instagram.svg);
+}
+.icon_twitter {
+    background-image: url(../images/twitter.svg);
+}
+
+.icon_linkedin {
+    background-image: url(../images/linkedin.svg);
+}
+.icon_instagram, .icon_twitter, .icon_linkedin {
+    display: block;
+    width: 24px;
+    height: 24px;
+    text-indent: -999rem;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    transition: background-color .3s;
+    margin: 0 -0.5rem;
+}
+footer > div {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-block-start: 46px;
+    padding-block-end: 30px;
+}
+footer > div p {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    text-align: center;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+    color: #A9A9A9;
+    margin-block-start: 112px;
+}
+@media (min-width: 768px) {
+    footer > div {
+        margin-left: 52px;
+        margin-right: 52px;
+    }
+    
+    footer > div > div {
+    max-width: 90%;
+    min-width:  90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+footer > div p {
+    max-width: 90%;
+    min-width: 90%;
+    margin: auto;
+    margin-block-start: 112px;
+}
+}
