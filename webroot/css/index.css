@@ -211,7 +211,8 @@ main {
 
 .masthead > figure > img {
   max-width: 100%;
-  min-width: 100%; }
+  min-width: 100%;
+  border-radius: 18px; }
 
 .services, .purpose {
   max-width: 80%;
