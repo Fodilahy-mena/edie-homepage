@@ -361,7 +361,7 @@ main {
   color: #333333; }
 
 .card > p {
-  font-family: Poppins;
+  font-family: PoppinsRegular;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -420,6 +420,48 @@ main {
 .card:hover {
   box-shadow: 0px 10px 30px rgba(51, 51, 51, 0.1); }
 
+.components--good--design figure {
+  margin: 0;
+  position: relative; }
+
+.components--good--design img {
+  max-width: 100%;
+  min-width: 100%;
+  border-radius: 12px; }
+
+.components--good--design p {
+  font-family: PoppinsRegular;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 18px;
+  /* identical to box height */
+  /* Gray 3 */
+  color: #828282; }
+
+.components--good--design figcaption {
+  font-family: PoppinsBold;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  /* Gray 1 */
+  color: #333333; }
+
+.see--more {
+  list-style: none;
+  padding: 0; }
+
+.more--link {
+  font-family: PoppinsMedium;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  /* identical to box height */
+  color: #2D9CDB; }
+
 @media (min-width: 768px) {
   .section--services {
     max-width: 90%;
@@ -434,10 +476,151 @@ main {
     min-width: unset;
     margin: auto;
     margin-left: unset; }
+  .section--services .good--design {
+    width: 448px; }
   .components__cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 16px; }
   .card {
     width: auto;
-    padding: 8%; } }
+    padding: 8%; }
+  .components--good--design {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px; }
+  .components--good--design p {
+    font-size: 14px;
+    line-height: 21px; }
+  .components--good--design figure:nth-of-type(odd) {
+    margin-top: 94px; }
+  .components--good--design figcaption {
+    font-size: 24px;
+    line-height: 36px; }
+  .see--more {
+    position: relative;
+    bottom: 48px;
+    max-width: fit-content;
+    margin-right: 0;
+    margin-left: auto; } }
+
+@font-face {
+  font-family: HeeboExtraBold;
+  src: local("Heebo Extra Bold"), local("Heebo ExtraBold"), local("Heebo Extra-bold"), local("Heebo Extra-Bold"), local("heebo extraBold"), local("heebo extra-bold"), local("beebo extrabold"), url("../fonts/Heebo-ExtraBold.woff2") format("woff2"), url("../fonts/Heebo-ExtraBold.woff") format("woff"); }
+
+@font-face {
+  font-family: PoppinsBold;
+  src: local("Poppins Bold"), local("Poppins-Bold"), local("poppins bold"), local("poppins-bold"), url("../fonts/Poppins-Bold1.woff2") format("woff2"), url("../fonts/Poppins-Bold1.woff") format("woff"); }
+
+@font-face {
+  font-family: PoppinsRegular;
+  src: local("Poppins Regular"), local("Poppins-Regular"), local("poppins regular"), local("poppins-regular"), url("../fonts/Poppins-Regular1.woff2") format("woff2"), url("../fonts/Poppins-Regular1.woff") format("woff"); }
+
+@font-face {
+  font-family: PoppinsMedium;
+  src: local("Poppins Medium"), local("Poppins-Medium"), local("poppins medium"), local("poppins-medium"), url("../fonts/Poppins-Medium1.woff2") format("woff2"), url("../fonts/Poppins-Medium1.woff") format("woff"); }
+
+.clients--components > header h3 {
+  font-family: PoppinsMedium;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 54px;
+  /* Gray 1 */
+  color: #333333; }
+
+.clients--components > header p {
+  font-family: PoppinsRegular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  /* Gray 2 */
+  color: #4F4F4F; }
+
+.team {
+  list-style: none;
+  padding: 0; }
+
+.team--link {
+  font-family: PoppinsMedium;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  /* identical to box height */
+  color: #EB5757; }
+
+.edie--clients {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px; }
+
+.clients__img {
+  max-width: 100%;
+  min-width: 100%;
+  border-radius: 24px; }
+
+.lady {
+  grid-row: 1/3;
+  margin-top: auto;
+  margin-bottom: auto; }
+
+.visioner {
+  grid-column: 2/3; }
+
+.posts h4 {
+  font-family: PoppinsMedium;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 54px;
+  /* Gray 1 */
+  color: #333333; }
+
+.posts__list {
+  list-style: none;
+  padding: 0; }
+
+.posts__list img {
+  width: 87px;
+  border-radius: 12px; }
+
+.posts__link {
+  text-decoration: none;
+  display: grid;
+  grid-template-columns: 85px auto;
+  max-width: fit-content;
+  gap: 24px; }
+
+.posts__link h5 {
+  margin-top: 0;
+  margin-bottom: .8rem;
+  font-family: PoppinsMedium;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  /* identical to box height */
+  /* Gray 1 */
+  color: #333333; }
+
+.posts__link span {
+  font-family: PoppinsMedium;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  /* identical to box height */
+  /* Gray 3 */
+  color: #828282; }
+
+@media (min-width: 768px) {
+  .section--clients {
+    max-width: 90%;
+    min-width: 90%;
+    margin: auto; }
+  .profiles {
+    display: grid;
+    grid-template-columns: 300px auto; } }

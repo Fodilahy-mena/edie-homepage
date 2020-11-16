@@ -1,4 +1,5 @@
 @import './fonts';
+
 .section--services {
     margin-block-start: 102px;
 }
@@ -28,7 +29,7 @@
     color: #333333;
 }
 .card > p {
-    font-family: Poppins;
+    font-family: PoppinsRegular;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -91,6 +92,57 @@
 .card:hover {
     box-shadow: 0px 10px 30px rgba(51, 51, 51, 0.1);
 }
+
+
+// ******** 
+
+.components--good--design figure {
+    margin: 0;
+    position: relative; 
+}
+
+.components--good--design img {
+    max-width: 100%;
+    min-width: 100%;
+    border-radius: 12px;
+}
+
+.components--good--design p {
+    font-family: PoppinsRegular;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
+    /* identical to box height */
+    /* Gray 3 */
+    color: #828282;
+}
+
+.components--good--design figcaption {
+    font-family: PoppinsBold;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    /* Gray 1 */
+    color: #333333;
+}
+.see--more {
+    list-style: none;
+    padding: 0;
+}
+.more--link {
+    font-family: PoppinsMedium;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    /* identical to box height */
+    color: #2D9CDB;
+
+}
+
 @media (min-width: 768px) {
 .section--services {
     max-width: 90%;
@@ -108,6 +160,9 @@
     margin: auto;
     margin-left: unset;
 }
+.section--services .good--design {
+    width: 448px;
+}
 .components__cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -116,6 +171,35 @@
 .card {
     width: auto;
     padding: 8%;
+}
+
+// *******
+.components--good--design {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+.components--good--design p {
+    font-size: 14px;
+    line-height: 21px;
+
+}
+
+.components--good--design figure:nth-of-type(odd) {
+    margin-top: 94px;
+    
+}
+
+.components--good--design figcaption {
+    font-size: 24px;
+    line-height: 36px;
+}
+.see--more {
+    position: relative;
+    bottom: 48px;
+    max-width: fit-content;
+    margin-right: 0;
+    margin-left: auto;
 }
 
 }
