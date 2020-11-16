@@ -9,17 +9,19 @@
 <body>
     <input type="checkbox" id="menu_checkbox">
     <header>
-        <h1>Edie</h1>
+        <h1>
+            <a href="#home">Edie</a>
+        </h1>
         <label for="menu_checkbox" class="icon_menu">
         </label>
     </header>
 
     <main>
         <header>
-            <div class="masthead">
+            <div id="unhappy" class="masthead">
                 <div class="services">
                     <ul>
-                        <li><a class="services--link" href="/unhappy">Unhappy with your website?</a></li>
+                        <li><a class="services--link" href="#unhappy">Unhappy with your website?</a></li>
                     </ul>
                     <h2>We create beautiful and fast web services</h2>
                 </div>
@@ -47,7 +49,7 @@
             </div>
         </header>
         <section class="section--services">
-            <div class="section--services__components">
+            <div id="services" class="section--services__components">
                 <h2>We offer high demand services</h2>
                 <div class="components__cards">
                     <div class="card">
@@ -87,7 +89,7 @@
                     </div>
                 </div>
             </div>
-            <div class="section--services__components">
+            <div id="our-works" class="section--services__components">
                 <h2 class="good--design">Good design means good business</h2>
                 <div class="components--good--design">
                     <figure>
@@ -116,7 +118,7 @@
                 </ul>
             </div>
         </section>
-        <section class="section--clients">
+        <section id="clients" class="section--clients">
             <div class="clients--components profiles">
                 <header>
                     <ul class="team">
@@ -154,49 +156,49 @@
         </label>
         <ul class="navigation__list">
             <li class="navigation__item active">
-                <a class="navigation__link navigation__link--home" href="/">Home</a>
+                <a class="navigation__link navigation__link--home" href="#home">Home</a>
             </li>
 
             <li class="navigation__item">
-                <a class="navigation__link navigation__link--services" href="/services">Services</a>
+                <a class="navigation__link navigation__link--services" href="#services">Services</a>
             </li>
 
             <li class="navigation__item">
-                <a class="navigation__link navigation__link--our-works" href="/our-works">Our works</a>
+                <a class="navigation__link navigation__link--our-works" href="#our-works">Our works</a>
             </li>
 
             <li class="navigation__item">
-                <a class="navigation__link navigation__link--clients" href="/clients">Clients</a>
+                <a class="navigation__link navigation__link--clients" href="#clients">Clients</a>
             </li>
 
             <li class="navigation__item">
-                <a class="navigation__link navigation__link--contact" href="/contact">Contact</a>
+                <a class="navigation__link navigation__link--contact" href="#contact">Contact</a>
             </li>
         </ul>
     </nav>
     <footer>
-        <div>
+        <div id="contact">
             <div>
                 <nav>
                     <ul class="footer__list">
                         <li class="footer__item active">
-                            <a class="footer__link footer__link--home" href="/">Home</a>
+                            <a class="footer__link footer__link--home" href="#home">Home</a>
                         </li>
             
                         <li class="footer__item">
-                            <a class="footer__link footer__link--services" href="/services">Services</a>
+                            <a class="footer__link footer__link--services" href="#services">Services</a>
                         </li>
             
                         <li class="footer__item">
-                            <a class="footer__link footer__link--our-works" href="/our-works">Our works</a>
+                            <a class="footer__link footer__link--our-works" href="#our-works">Our works</a>
                         </li>
             
                         <li class="footer__item">
-                            <a class="footer__link footer__link--clients" href="/clients">Clients</a>
+                            <a class="footer__link footer__link--clients" href="#clients">Clients</a>
                         </li>
             
                         <li class="footer__item">
-                            <a class="footer__link footer__link--contact" href="/contact">Contact</a>
+                            <a class="footer__link footer__link--contact" href="#contact">Contact</a>
                         </li>
                     </ul>    
                 </nav>

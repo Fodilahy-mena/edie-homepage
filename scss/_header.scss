@@ -17,7 +17,8 @@ body > header {
     }
 }
 
-body > header > h1 {
+body > header > h1 a {
+    text-decoration: none;
     font-family: HeeboExtraBold;
     font-style: normal;
     font-weight: 800;
