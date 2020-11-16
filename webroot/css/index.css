@@ -340,7 +340,8 @@ main {
   src: local("Poppins Medium"), local("Poppins-Medium"), local("poppins medium"), local("poppins-medium"), url("../fonts/Poppins-Medium1.woff2") format("woff2"), url("../fonts/Poppins-Medium1.woff") format("woff"); }
 
 .section--services {
-  margin-block-start: 102px; }
+  margin-block-start: 102px;
+  margin-block-end: 220px; }
 
 .section--services h2 {
   font-family: PoppinsMedium;
@@ -472,7 +473,8 @@ main {
     max-width: 90%;
     min-width: 90%;
     margin: auto;
-    margin-block-start: 102px; }
+    margin-block-start: 102px;
+    margin-block-end: 220px; }
   .section--services h2 {
     width: 346px;
     font-size: 36px;
